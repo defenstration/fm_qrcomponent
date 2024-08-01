@@ -49,7 +49,13 @@ body, h1, h2, h3 {
 /* Set body                               */
 
 body {
+    font-family: 'Outfit', 'sans-serif';
     font-size: 15px
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 /* remove animations for people who've turned them off */
@@ -63,3 +69,52 @@ body {
       scroll-behavior: auto !important;
     }
   }
+
+
+
+/*----------------------------------------*/
+/* Utility classes                        */
+/*----------------------------------------*/
+
+.bold {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.text {
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+/*----------------------------------------*/
+/* Styling                                */
+/*----------------------------------------*/
+
+ {
+    border: 1px solid black
+}
+
+.component {
+    width: 300px;
+}
+
+.qr-wrapper {
+    width: 280px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+p {
+    width: 85%;
+    text-align: center;
+}
+
+.text-box {
+    margin-bottom: 5px;
+}
