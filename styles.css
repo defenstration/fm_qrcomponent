@@ -1,0 +1,65 @@
+/*----------------------------------------*/
+/* Custom Properties                      */
+/*----------------------------------------*/
+
+:root {
+    --clr-white: 0 0% 100%;
+    --clr-slate300: 212 45% 89%;
+    --clr-slate500: 216 15% 48%;
+    --clr-slate900: 218 44% 22%;
+}
+
+
+
+
+/*----------------------------------------*/
+/* Properties from FM files               */
+/*----------------------------------------*/
+
+/* Outfit font from google                */
+
+/* <weight>: Use a value from 100 to 900  */
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* design widths- Mobile 375px Desktop 1440px */
+
+/*----------------------------------------*/
+/* Reset                                  */
+/*----------------------------------------*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins                          */
+
+body, h1, h2, h3 {
+    margin: 0
+}
+
+/* Set body                               */
+
+body {
+    font-size: 15px
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
