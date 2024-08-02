@@ -39,7 +39,7 @@
 
 /* Reset margins                          */
 
-body, h1, h2, h3 {
+body, h1, h2, h3, p {
     margin: 0
 }
 
@@ -89,7 +89,8 @@ img {
     font-size: 15px;
     font-weight: 400;
     letter-spacing: .2px;
-    margin-bottom: 40px;
+    bottom: 40px;
+    position: ;
     line-height: 120%;
     color: hsl(var(--clr-slate500))
 }
@@ -100,6 +101,7 @@ img {
 
 .flex {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -112,11 +114,15 @@ img {
 /* Styling                                */
 /*----------------------------------------*/
 
+* {
+    border: 1px solid black
+}
 
 .component {
     width: 320px;
     height: 499px;
     background-color: hsl(var(--clr-white));
+    margin: 50px;
 }
 
 .qr-wrapper {
