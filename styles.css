@@ -89,8 +89,10 @@ img {
     font-size: 15px;
     font-weight: 400;
     letter-spacing: .2px;
+    position: absolute;
     bottom: 40px;
-    position: ;
+    left: 50%;
+    transform: translate(-50%);
     line-height: 120%;
     color: hsl(var(--clr-slate500))
 }
@@ -115,7 +117,7 @@ img {
 /*----------------------------------------*/
 
 * {
-    border: 1px solid black
+    border: 1px solid transparent;
 }
 
 .component {
@@ -123,6 +125,7 @@ img {
     height: 499px;
     background-color: hsl(var(--clr-white));
     margin: 50px;
+    position: relative;
 }
 
 .qr-wrapper {
