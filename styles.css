@@ -52,7 +52,6 @@ body {
     min-width: 320px;
     justify-content: center;
     background-color:  hsl(var(--clr-slate300) );
-
 }
 
 /* Image Settings                        */
@@ -81,7 +80,11 @@ img {
     font-size: 22px;
     font-weight: 700;
     line-height: 140%;
-    color: hsl(var(--clr-slate900))
+    color: hsl(var(--clr-slate900));
+    position: absolute;
+    top: 328px;
+    left: 50%;
+    transform: translate(-50%);
 
 }
 
@@ -116,9 +119,7 @@ img {
 /* Styling                                */
 /*----------------------------------------*/
 
-* {
-    border: 1px solid transparent;
-}
+
 
 .component {
     width: 320px;
@@ -131,9 +132,10 @@ img {
 .qr-wrapper {
     width: 288px;
     height: 288px;
-    margin-top: 16px;
-    margin-bottom: 24px;
-    margin-inline: auto;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translate(-50%);
     overflow: hidden;
 }
 
